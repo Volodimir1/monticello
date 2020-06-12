@@ -1,3 +1,5 @@
+<img height="711" width="200" src="monticello.jpg">
+
 # monticello
 
 ## Project setup
