@@ -6,35 +6,35 @@
                 <div class="header__head">
                     <div class="header__head-fl">
                         <div>
-                        <img class="header__head-logo" src="../images/Logo.svg" alt="Logo">
+                            <img class="header__head-logo" src="../images/Logo.svg" alt="Logo">
                         </div>
                         <ul class="header__head-list">
-                        <li>
-                        <p>About Us</p>
-                        </li>
-                        <li>
-                        <p>projects</p>
-                        </li>
-                        <li>
-                        <p>news</p>
-                        </li>
-                        <li>
-                        <p>contact</p>
-                        </li>
+                            <li class="header__head-list-item">
+                            <p>About Us</p>
+                            </li>
+                            <li class="header__head-list-item">
+                            <p>projects</p>
+                            </li>
+                            <li class="header__head-list-item">
+                            <p>news</p>
+                            </li>
+                            <li class="header__head-list-item">
+                            <p>contact</p>
+                            </li>
                         </ul>
                         <ul class="header__head-list-soc">
-                        <li>
-                        <img src="../images/Ellipse_2.svg" alt="Ellipse_2">
-                        <p></p>
-                        </li>
-                        <li>
-                        <img src="../images/Ellipse_2.svg" alt="Ellipse_2">
-                        <p></p>
-                        </li>
-                        <li>
-                        <img src="../images/Ellipse_2.svg" alt="Ellipse_2">
-                        <p></p>
-                        </li>
+                            <li class="header__head-list-soc-item">
+                                <img src="../images/Ellipse_2.svg" alt="Ellipse_2">
+                                <p class="header__head-list-soc-item-t"></p>
+                            </li>
+                            <li class="header__head-list-soc-item">
+                                <img src="../images/Ellipse_2.svg" alt="Ellipse_2">
+                                <p class="header__head-list-soc-item-t"></p>
+                            </li>
+                            <li class="header__head-list-soc-item">
+                                <img src="../images/Ellipse_2.svg" alt="Ellipse_2">
+                                <p class="header__head-list-soc-item-t"></p>
+                            </li>
                         </ul>
                     </div>
                 </div>
@@ -59,8 +59,6 @@ export default {
 
 // <style scoped lang="scss">
 .header {
-    // margin: 0;
-    // padding: 0;
     height: 100%;
     width: 100%;
     background-color: #4b4b4b;
@@ -77,19 +75,39 @@ export default {
         width: 100%;
         left: auto;
         top: 5%;
-        // color: #ffffff;
-        
+        color: #ffffff;
     }
-    // &__head-fl {
-    //     display: flex;
-    //     flex-direction: row;
-    //     justify-content: space-around;
-    // }
+    &__head-fl {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
     &__head-list {
+        position: relative;
+        bottom: 15px;
+        width: 595px;
         list-style: circle;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
     }
+    // &__head-list-item {
+    // }
     &__head-list-soc {
+        width: 162px;
         list-style: none;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+    &__head-list-soc-item {
+        position: relative;
+    }
+    &__head-list-soc-item-t {
+        position: absolute;
+        width: 100%;
+        left: 35%;
+        top: 5%;
     }
     &__text {
         position: absolute;
