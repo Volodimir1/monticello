@@ -1,28 +1,37 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <Header/>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import Header from './components/Header'
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    Header
   }
 }
 </script>
 
-<style lang="scss">
+// <style lang="scss">
+@font-face {
+  font-family: GothamBlack;
+  src: url(fonts/Gotham-Black.otf);
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: GothamBook;
+  src: url(fonts/GothamBook.ttf);
+  font-weight: normal;
+  font-style: normal;
+}
 #app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 </style>
